@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+
+    <h1>Othello</h1>
+
+    <div class="layout">
+        <div>
+            <h2>Stats</h2>
+            <p>Player <span class="current-player">1</span>'s turn</p>
+            <p>Player 1 Score: <span class="p1s">2</span></p>
+            <p>Player 2 Score: <span class="p2s">2</span></p>
+        </div>
+
+        <div class="board">
+            <!-- populated by JavaScript -->
+        </div>
+
+        <div>
+            <h2>Rules</h2>
+            <p>Player 1 starts with putting down their colour. If the player has another brick of their colour
+                horizontally, vertically or diagonally the bricks in between will turn into player 1's colour. When
+                player 1 has put down their brick it's player 2's turn. The game ends when the board is full and the
+                player with the most bricks of their colour on the board wins the game.
+            </p>
+        </div>
+    </div>
+
+    <div class="results hidden">
+        <h2>Congrats Player <span class="winner">1</span>!</h2>
+        <p>You won!!</p>
+        <p><a href="./index.html">Play Again</a></p>
+    </div>
+
+
+
+
+</body>
+
+</html>

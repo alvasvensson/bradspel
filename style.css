@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body {
+    background-image: url("./bkg.png");
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 40px;
+    color: rgba(84, 73, 75, 255);
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(84, 73, 75, 255);
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: rgba(84, 73, 75, 255);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(84, 73, 75, 255);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: rgb(162, 162, 236);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: rgb(162, 145, 233);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, min-content);
+    grid-gap: 5px;
+}
+
+.board button {
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 10px;
+}
+
+.board-space {
+    width: 32px;
+    height: 32px;
+}
+
+@media (min-width: 600px) {
+    .board-space {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.cross {
+    background-color: rgba(160, 176, 231, 244);
+}
+
+.ring {
+    background-color: rgba(185, 131, 137, 255);
+}
+
+.hidden {
+    display: none;
+}
+
+.results {
+    margin: 0;
+    padding: 7%;
+    position: fixed;
+    top: 30%;
+    left: 34.5%;
+    border-radius: 30px;
+    background-color: rgba(229, 196, 225, 248);
+}
